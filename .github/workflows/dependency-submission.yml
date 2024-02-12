@@ -22,3 +22,7 @@ jobs:
         distribution: 'temurin'
     - name: Generate and submit dependency graph
       uses: gradle/actions/dependency-submission@dd/v3.1
+      with:
+        build-scan-publish: true
+        build-scan-terms-of-service-url: "https://gradle.com/terms-of-service"
+        build-scan-terms-of-service-agree: "yes"
