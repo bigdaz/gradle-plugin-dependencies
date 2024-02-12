@@ -26,3 +26,10 @@ jobs:
         build-scan-publish: true
         build-scan-terms-of-service-url: "https://gradle.com/terms-of-service"
         build-scan-terms-of-service-agree: "yes"
+
+  dependency-review:
+    needs: dependency-submission
+    runs-on: ubuntu-latest
+    steps:
+    - name: Perform dependency review
+      uses: actions/dependency-review-action@v3
