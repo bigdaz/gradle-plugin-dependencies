@@ -1,3 +1,4 @@
 [plugins]
 github-release = { id = "com.github.breadmoirai.github-release", version = "2.5.2" }
 spring-boot = { id = "org.springframework.boot", version = "3.2.2" }
+shadow-jar = { id = "com.github.johnrengelman.shadow", version = "8.1.1" }
