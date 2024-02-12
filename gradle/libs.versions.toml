@@ -5,6 +5,8 @@ okio = { module = "com.squareup.okio:okio", version = "3.4.0" }
 [plugins]
 github-release = { id = "com.github.breadmoirai.github-release", version = "2.5.2" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version = "12.1.0" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "1.9.22" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version = "1.9.22" }
 shadow-jar = { id = "com.github.johnrengelman.shadow", version = "8.1.1" }
 spotbugs = { id = "com.github.spotbugs", version = "6.0.7" }
 spotless = { id = "com.diffplug.spotless", version = "6.25.0" }
