@@ -1,4 +1,6 @@
 rootProject.name = "gradle-plugin-dependencies"
 
-include(":plugins:github_release")
-include(":plugins:spring_boot")
+// Include each directory under plugins
+file("plugins").list().forEach { dir ->
+    include(":plugins:${dir}")
+}
