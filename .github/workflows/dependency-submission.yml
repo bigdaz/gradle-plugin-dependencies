@@ -29,6 +29,7 @@ jobs:
 
   dependency-review:
     needs: dependency-submission
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
     - name: Perform dependency review
