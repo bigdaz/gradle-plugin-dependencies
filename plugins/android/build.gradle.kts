@@ -1,3 +1,17 @@
+// FIX Dependabot Alert
+// Override 'com.google.protobuf:protobuf-java' to avoid https://github.com/advisories/GHSA-4gg5-vx3j-xwc7
+buildscript {
+    repositories {
+        gradlePluginPortal()
+    }
+    dependencies {
+        constraints {
+            classpath(libs.protobuf.java)
+        }
+    }
+}
+// END FIX
+
 // Based on nowinandroid
 plugins {
     alias(libs.plugins.android.application) apply false
