@@ -24,7 +24,7 @@ android-application = { id = "com.android.application", version.ref = "androidGr
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
 baselineprofile = { id = "androidx.baselineprofile", version = "1.2.2"}
-dependencyGuard = { id = "com.dropbox.dependency-guard", version = "0.4.3" }
+dependencyGuard = { id = "com.dropbox.dependency-guard", version = "0.5.0" }
 firebase-crashlytics = { id = "com.google.firebase.crashlytics", version = "2.9.9" }
 firebase-perf = { id = "com.google.firebase.firebase-perf", version = "1.4.2" }
 gms = { id = "com.google.gms.google-services", version = "4.4.0" }
