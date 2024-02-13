@@ -1,11 +1,12 @@
 // FIX Dependabot Alert
-// Override 'io.grpc:grpc-*' (which updates 'com.google.protobuf:protobuf-java') to avoid:
+// Override 'io.grpc:grpc-*' (which updates 'com.google.protobuf:protobuf-java' & 'io.netty:netty-codec-http') to avoid:
 //      https://github.com/advisories/GHSA-h4h5-3hr4-j3g2
 //      https://github.com/advisories/GHSA-g5ww-5jh7-63cx
 //      https://github.com/advisories/GHSA-4gg5-vx3j-xwc7
 //      https://github.com/advisories/GHSA-6628-q6j9-w8vg
 //      https://github.com/advisories/GHSA-cfgp-2977-2fmm
 //      https://github.com/advisories/GHSA-9hxf-ppjv-w6rq
+//      https://github.com/advisories/GHSA-269q-hmxg-m83q
 // Override 'org.bitbucket.b_c:jose4j' to avoid:
 //      https://github.com/advisories/GHSA-7g24-qg88-p43q
 //      https://github.com/advisories/GHSA-jgvc-jfgh-rjvv
