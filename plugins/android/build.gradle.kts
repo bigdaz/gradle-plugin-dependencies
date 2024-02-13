@@ -12,6 +12,8 @@
 //      https://github.com/advisories/GHSA-jgvc-jfgh-rjvv
 // Override 'xerces:xercesImpl' to avoid:
 //      https://github.com/advisories/GHSA-h65f-jvqw-m9fj
+// Override 'commons-io:commons-io' to avoid:
+//      https://github.com/advisories/GHSA-gwrp-pvrq-jmwv
 buildscript {
     repositories {
         gradlePluginPortal()
@@ -21,6 +23,7 @@ buildscript {
         constraints {
             classpath(libs.jose4j)
             classpath(libs.xerces)
+            classpath(libs.commons.io)
         }
     }
 }

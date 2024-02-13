@@ -4,6 +4,7 @@ kotlin = "1.9.22"
 
 [libraries]
 commons-compress = { module = "org.apache.commons:commons-compress", version = "1.25.0" }
+commons-io = { module = "commons-io:commons-io", version = "2.7" }
 grpc-bom = { module = "io.grpc:grpc-bom", version = "1.61.1" }
 jose4j = { module = "org.bitbucket.b_c:jose4j", version = "0.9.4" }
 okio = { module = "com.squareup.okio:okio", version = "3.4.0" }
