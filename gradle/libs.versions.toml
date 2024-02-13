@@ -7,6 +7,7 @@ commons-compress = { module = "org.apache.commons:commons-compress", version = "
 grpc-bom = { module = "io.grpc:grpc-bom", version = "1.61.1" }
 jose4j = { module = "org.bitbucket.b_c:jose4j", version = "0.9.4" }
 okio = { module = "com.squareup.okio:okio", version = "3.4.0" }
+xerces = { module = "xerces:xercesImpl", version = "2.12.2" }
 
 [plugins]
 github-release = { id = "com.github.breadmoirai.github-release", version = "2.5.2" }

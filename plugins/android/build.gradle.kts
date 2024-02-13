@@ -10,6 +10,8 @@
 // Override 'org.bitbucket.b_c:jose4j' to avoid:
 //      https://github.com/advisories/GHSA-7g24-qg88-p43q
 //      https://github.com/advisories/GHSA-jgvc-jfgh-rjvv
+// Override 'xerces:xercesImpl' to avoid:
+//      https://github.com/advisories/GHSA-h65f-jvqw-m9fj
 buildscript {
     repositories {
         gradlePluginPortal()
@@ -18,6 +20,7 @@ buildscript {
         classpath(platform(libs.grpc.bom))
         constraints {
             classpath(libs.jose4j)
+            classpath(libs.xerces)
         }
     }
 }
