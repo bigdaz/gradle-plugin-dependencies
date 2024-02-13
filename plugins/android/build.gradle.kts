@@ -1,5 +1,5 @@
 // FIX Dependabot Alert
-// Override 'io.grpc:grpc-protobuf' (which updates 'com.google.protobuf:protobuf-java') to avoid:
+// Override 'io.grpc:grpc-*' (which updates 'com.google.protobuf:protobuf-java') to avoid:
 //      https://github.com/advisories/GHSA-h4h5-3hr4-j3g2
 //      https://github.com/advisories/GHSA-g5ww-5jh7-63cx
 //      https://github.com/advisories/GHSA-4gg5-vx3j-xwc7
@@ -14,8 +14,8 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
+        classpath(platform(libs.grpc.bom))
         constraints {
-            classpath(libs.gprc.protobuf)
             classpath(libs.jose4j)
         }
     }
