@@ -19,11 +19,11 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath(platform(libs.grpc.bom))
+        classpath(platform("io.grpc:grpc-bom:1.61.1"))
         constraints {
-            classpath(libs.jose4j)
-            classpath(libs.xerces)
-            classpath(libs.commons.io)
+            classpath("org.bitbucket.b_c:jose4j:0.9.4")
+            classpath("xerces:xercesImpl:2.12.2")
+            classpath("commons-io:commons-io:2.7")
         }
     }
 }

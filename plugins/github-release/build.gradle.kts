@@ -6,7 +6,7 @@ buildscript {
     }
     dependencies {
         constraints {
-            classpath(libs.okio)
+            classpath("com.squareup.okio:okio:3.4.0")
         }
     }
 }
