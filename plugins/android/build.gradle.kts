@@ -1,12 +1,18 @@
 // FIX Dependabot Alert
-// Override 'com.google.protobuf:protobuf-java' to avoid https://github.com/advisories/GHSA-4gg5-vx3j-xwc7
+// Override 'io.grpc:grpc-protobuf' (which updates 'com.google.protobuf:protobuf-java') to avoid:
+//      https://github.com/advisories/GHSA-h4h5-3hr4-j3g2
+//      https://github.com/advisories/GHSA-g5ww-5jh7-63cx
+//      https://github.com/advisories/GHSA-4gg5-vx3j-xwc7
+//      https://github.com/advisories/GHSA-6628-q6j9-w8vg
+//      https://github.com/advisories/GHSA-cfgp-2977-2fmm
+//      https://github.com/advisories/GHSA-9hxf-ppjv-w6rq
 buildscript {
     repositories {
         gradlePluginPortal()
     }
     dependencies {
         constraints {
-            classpath(libs.protobuf.java)
+            classpath(libs.gprc.protobuf)
         }
     }
 }
