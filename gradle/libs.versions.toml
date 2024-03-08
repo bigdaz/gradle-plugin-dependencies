@@ -4,7 +4,7 @@ kotlin = "1.9.22"
 
 [plugins]
 download = { id = "de.undercouch.download", version = "5.5.0" }
-flyway = { id = "org.flywaydb.flyway", version = "10.7.2" }
+flyway = { id = "org.flywaydb.flyway", version = "10.9.1" }
 github-release = { id = "com.github.breadmoirai.github-release", version = "2.5.2" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version = "12.1.0" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
